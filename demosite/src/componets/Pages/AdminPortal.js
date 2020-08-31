@@ -8,20 +8,45 @@ class AdminPortal extends Component {
           <div>
             <Portal 
             PortalName="Admin Portal"
+            PersonName="Muhammad Umar"
             
-            showHistory1="true"
-            History1="Doctors History"
-            showHistory2="true"
-            History2="Patients History"
+            // Heading 01
+            mainoption1="Manage Doctor"
+            smalloption1="Add Doctor"
+
+            showOption2="true"
+            smalloption2="Delete Doctor"
+
+            showOption3="true"
+            smalloption3="Doctor History"
+            src="/login"
+
+            // Heading 02
+            mainoption2="Manage Patients"
+
+            showOption4="true"
+            smalloption4="Add Patient"
+
+            showOption5="true"
+            smalloption5="Delete Patient"
+
+            showOption6="true"
+            smalloption6="Patient History"
+
+
+
+            // Heading 03
+            mainoption3="Account"
+           
+            showOption7="true"
+            smalloption7="Change Account Info"
+
+            showOption8=""
+            smalloption8=""
             
-            showRequest1="true"
-            Request1="Doctors Request"
-            showRequest2="true"
-            Request2="Patients Request"
 
             uploadImage=""
 
-            PersonName="Muhammad Umar"
             
             />
         <Copyright />

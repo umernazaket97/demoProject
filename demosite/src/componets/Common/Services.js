@@ -9,27 +9,29 @@ import LCimg from "../assests/img/lungs.png";
 
 const services = [
   {
-    title: "Brain Tumor Detection",
+    title: "Brain Tumor Diagnosis",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
     imgSrc: BTimg
   },
   {
-    title: "Breast Cancer Detection",
+    title: "Breast Cancer Diagnosis",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
     imgSrc: BCimg
   },
-  {
-    title: "TuberCulosis Detection",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
-      imgSrc: LCimg
-  }
+  // {
+  //   title: "TuberCulosis Detection",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
+  //     imgSrc: LCimg
+  // }
 ];
 
 const colore = {
-  color: "#fec503"
+  color: "#fec503",
+  
+
 };
 
 class Services extends Component

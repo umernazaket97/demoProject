@@ -6,21 +6,46 @@ class DoctorsPortal extends Component {
         return (
           <div>
             <Portal 
-            PortalName="Doctors Portal"
-
-            showHistory1="true"
-            History1="Patient History"
-            showHistory2=""
-            History2="Patients History"
+            PortalName="Doctor Portal"
+            PersonName="Dr. Muhammad Umar"
             
-            showRequest1=""
-            Request1=""
-            showRequest2="true"
-            Request2="Patients Request"
+            // Heading 01
+            mainoption1="Dashboard"
+            smalloption1="Get Report"
+
+            showOption2=""
+            smalloption2=""
+
+            showOption3=""
+            smalloption3=""
+
+            // Heading 02
+            mainoption2="Manage Patients"
+
+            showOption4="true"
+            smalloption4="Add Patient"
+
+            showOption5="true"
+            smalloption5="Delete Patient"
+
+            showOption6="true"
+            smalloption6="Patient History"
+
+
+
+            // Heading 03
+            mainoption3="Account"
+           
+            showOption7="true"
+            smalloption7="Change Account Info"
+
+            showOption8=""
+            smalloption8=""
+            
 
             uploadImage="true"
 
-            PersonName="Dr. Muhammad Umar"
+            
             />
            
            </div>

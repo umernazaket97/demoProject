@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+
 const SubStyle = {
   color: "#fec503",
 };
@@ -77,37 +78,57 @@ class portal extends Component {
             >
               <div class="sb-sidenav-menu">
                 <div class="nav">
-                  <div class="sb-sidenav-menu-heading">Core</div>
+                  {/* Heading 1 */}
+                  <div class="sb-sidenav-menu-heading">
+                    {this.props.mainoption1}
+                  </div>
                   <a class="nav-link" href="#">
                     <div class="sb-nav-link-icon">
                       <i class="fas fa-tachometer-alt"></i>
                     </div>
-                    Dashboard
+                    {/* Small Heading 01 of 1 */}
+                    {this.props.smalloption1}
                   </a>
-                  {/* History List */}
-                  <div class="sb-sidenav-menu-heading">History</div>
-                  {/* History 1 */}
-                  {this.props.showHistory1 && (
-                    <a
-                      class="nav-link collapsed"
-                      href="#"
-                      data-toggle="collapse"
-                      data-target="#collapseLayouts"
-                      aria-expanded="false"
-                      aria-controls="collapseLayouts"
-                    >
+
+                  {this.props.showOption2 && (
+                    <a class="nav-link" href="#">
                       <div class="sb-nav-link-icon">
                         <i class="fas fa-columns"></i>
                       </div>
-                      {this.props.History1}
+                      {/* Small Heading 02 of 1 */}
+                      {this.props.smalloption2}
+                    </a>
+                  )}
+
+                  {this.props.showOption3 && (
+                    <a class="nav-link" href={this.props.src}>
+                      <div class="sb-nav-link-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                      </div>
+                      {/* Small Heading 03 of 1 */}
+                      {this.props.smalloption3}
+                    </a>
+                  )}
+
+                  {/* Heading 02 */}
+                  <div class="sb-sidenav-menu-heading">
+                    {this.props.mainoption2}
+                  </div>
+                  {/* Small Heading 1 on 2 */}
+                  {this.props.showOption4 && (
+                    <a class="nav-link collapsed" href="#">
+                      <div class="sb-nav-link-icon">
+                        <i class="fas fa-columns"></i>
+                      </div>
+                      {this.props.smalloption4}
                       <div class="sb-sidenav-collapse-arrow">
                         <i class="fas fa-angle-down"></i>
                       </div>
                     </a>
                   )}
 
-                  {/* History 2 */}
-                  {this.props.showHistory2 && (
+                  {/* Small Heading 2 on 2 */}
+                  {this.props.showOption5 && (
                     <a
                       class="nav-link collapsed"
                       href="#"
@@ -119,31 +140,53 @@ class portal extends Component {
                       <div class="sb-nav-link-icon">
                         <i class="fas fa-book-open"></i>
                       </div>
-                      {this.props.History2}
+                      {this.props.smalloption5}
                       <div class="sb-sidenav-collapse-arrow">
                         <i class="fas fa-angle-down"></i>
                       </div>
                     </a>
                   )}
 
-                  {/* Request List */}
-                  <div class="sb-sidenav-menu-heading">Pending Requests</div>
-                  {/* Request 01 */}
-                  {this.props.showRequest1 && (
+                  {/* Small Heading 3 on 2 */}
+                  {this.props.showOption6 && (
+                    <a
+                      class="nav-link collapsed"
+                      href="#"
+                      data-toggle="collapse"
+                      data-target="#collapsePages"
+                      aria-expanded="false"
+                      aria-controls="collapsePages"
+                    >
+                      <div class="sb-nav-link-icon">
+                        <i class="fas fa-book-open"></i>
+                      </div>
+                      {this.props.smalloption6}
+                      <div class="sb-sidenav-collapse-arrow">
+                        <i class="fas fa-angle-down"></i>
+                      </div>
+                    </a>
+                  )}
+
+                  {/* Main Heading 3 */}
+                  <div class="sb-sidenav-menu-heading">
+                    {this.props.mainoption3}
+                  </div>
+                  {/* Small Heading 1 on 3 */}
+                  {this.props.showOption7 && (
                     <a class="nav-link" href="#">
                       <div class="sb-nav-link-icon">
                         <i class="fas fa-chart-area"></i>
                       </div>
-                      {this.props.Request1}
+                      {this.props.smalloption7}
                     </a>
                   )}
-                  {/* Request 02 */}
-                  {this.props.showRequest2 && (
+                  {/* Small Heading 2 on 3 */}
+                  {this.props.showOption8 && (
                     <a class="nav-link" href="#">
                       <div class="sb-nav-link-icon">
                         <i class="fas fa-table"></i>
                       </div>
-                      {this.props.Request2}
+                      {this.props.smalloption8}
                     </a>
                   )}
                 </div>
@@ -203,14 +246,19 @@ class portal extends Component {
                   <div class="card-header">
                     <i class="fas fa-table mr-1"></i>
                     There will be some information
+                    
                   </div>
-                  <div class="card-body"></div>
+                  <div class="card-body">
+                    hello there
+                   
+                  </div>
                 </div>
               </div>
             </main>
-          </div>
+          </div>          
         </div>
       </body>
+      
     );
   }
 }

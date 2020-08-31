@@ -96,8 +96,8 @@ class Report extends Component {
                     <tr>
                       <th scope="row">1234</th>
                       <td>Muhammad Umar</td>
-                      <td>House 123, Street abc, Rwp</td>
-                      <td>August 24, 2020</td>
+                      <td>Plot 123, Street abc, Rwp</td>
+                      <td>August 26, 2020</td>
                     </tr>
                   </tbody>
                 </table>

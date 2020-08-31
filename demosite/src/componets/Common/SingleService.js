@@ -6,7 +6,7 @@ class SingleService extends Component
     render()
     {
         return (
-          <div className="col-md-4">
+          <div className="col-md-6">
             <span className="fa-stack fa-4x">
               <img height={120} src={this.props.imgSrc} alt=""></img>
             </span>

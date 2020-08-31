@@ -8,6 +8,8 @@ class Signup extends Component {
     fullName: "",
     Username: "",
     password: "",
+    CNIC: "",
+    role: "",
     navigate: false,
   };
 
@@ -21,7 +23,7 @@ class Signup extends Component {
     console.log("email" + this.state.email);
     e.preventDefault();
     //this will assign these variable values from this.state
-    const { email, fullName, Username, password } = this.state;
+    const { email, fullName, Username, password, role, CNIC } = this.state;
     console.log("name after assigning" + email);
 
     //this will send data to rest api then api will send mail with given data to admin
@@ -31,6 +33,8 @@ class Signup extends Component {
         fullName,
         Username,
         password,
+        CNIC,
+        role,
       })
       .then((res) => {
         if (res.status === 200) {
@@ -73,6 +77,15 @@ class Signup extends Component {
                 onChange={this.handleChange}
                 required="required"
               />
+              <br />
+               <input
+                className="text"
+                type="text"
+                name="CNIC"
+                placeholder="Enter CNIC"
+                onChange={this.handleChange}
+                required="required"
+              />
 
               <input
                 className="text email"
@@ -97,6 +110,40 @@ class Signup extends Component {
                 placeholder="Confirm Password"
                 required="required"
               />
+              <div class="container">
+                <div class="btn-group-vertical ">
+                  <button
+                    onClick={this.handleChange}
+                    type="button"
+                    name="role"
+                    value="3"
+                    class="btn btn-primary "
+                  >
+                    Admin
+                  </button>
+                  <button
+                    onClick={this.handleChange}
+                    type="button"
+                    name="role"
+                    value="2"
+                    class="btn btn-primary "
+                  >
+                    Doctor
+                  </button>
+                  <div class="btn-group">
+                    <button
+                      onClick={this.handleChange}
+                      type="button"
+                      name="role"
+                      value="1"
+                      class="btn btn-primary"
+                    >
+                      Patient
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <br />
               <div className="wthree-text">
                 <label className="anim">
                   <input

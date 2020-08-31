@@ -62,7 +62,7 @@ class ServiceDetails extends Component {
           accuracy, can find a ready local market.
         </p>
 
-        <h1 className="tc pl6-ns pr6-ns f1 lh-title" style={SubStyle}>
+        {/* <h1 className="tc pl6-ns pr6-ns f1 lh-title" style={SubStyle}>
           Why Tuberculosis
         </h1>
 
@@ -80,7 +80,7 @@ class ServiceDetails extends Component {
           with HIV).
           <br /> Child and adolescent TB is often overlooked by health providers
           and can be difficult to diagnose and treat.
-        </p>
+        </p> */}
         <img src={image} alt=""></img>
         <h3 className="tc pb6-ns pr6-ns pl6-ns">
           Image Showing that MID System detects all three diseases and their
