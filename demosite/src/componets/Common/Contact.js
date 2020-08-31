@@ -57,13 +57,18 @@ class Contact extends Component {
     //this will assign these variable values from this.state
     const { name, email, phone, message } = this.state;
     console.log("name after assigning" + name);
+
     //this will send data to rest api then api will send mail with given data to admin
     const form = await axios.post("/api/form", {
       name,
       email,
       phone,
       message
-    });
+    }).then((Result) => {
+      alert("Sorry !!!! Un-authenticated User");
+      window.location.reload(false);
+    })
+
   };
 
   render() {

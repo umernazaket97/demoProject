@@ -27,15 +27,15 @@ app.post("/form", async (req, res) => {
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: "balich616@gmail.com", //  user
-      pass: "comsats1433", //  password
+      user: "RevolutionalTechnologies@gmail.com", //  user
+      pass: "Revolutional_123", //  password
     },
   });
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: '"Node Mailer" <balich616@gmail.com>', // sender address
-    to: "umarnazaket97@gmail.com, balich617@gmail.com", // list of receivers
+    from: '"Node Mailer" <RevolutionalTechnologies@gmail.com>', // sender address
+    to: "umarnazaket@gmail.com, balich617@gmail.com", // list of receivers
     subject: "Contact Request", // Subject line
     text: "This is for test purpose", // plain text body
     html: htmll, // html body
