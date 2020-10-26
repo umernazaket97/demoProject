@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import PageWrapper from "./componets/PageWrapper";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -21,6 +21,9 @@ import Reportpdf from "./PDFworking/Reportpdf";
 import AdminPortal from "./componets/Pages/AdminPortal";
 import DoctorsPortal from "./componets/Pages/DoctorsPortal";
 import PatientPortal from "./componets/Pages/PatientPortal";
+
+
+//lora lasan add kiya haaa
 
 //this is for test purpose
 import pdf from "./PDFworking/pdfreport";
